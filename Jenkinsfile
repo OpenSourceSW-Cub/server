@@ -1,16 +1,15 @@
 pipeline {    
     agent any
     environment {
-        PROJECT_ID = 'oss-fall'
-        CLUSTER_NAME = 'k8s'
+        PROJECT_ID = 'oss-project-363004'
+        CLUSTER_NAME = 'kube'
         LOCATION = 'asia-northeast3-a'
-        CREDENTIALS_ID = 'gke'
     }
     stages {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("sungone/oss-cub:latest")
+                    myapp = docker.build("listenyoon/oss-cub:latest")
                 }
             }
         }
