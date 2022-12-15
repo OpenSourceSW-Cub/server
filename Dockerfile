@@ -3,8 +3,8 @@ COPY . /app
 WORKDIR /app
 RUN npm install
 
-ENV DB_USER "root"
-ENV DB_PASS "password"
+ENV DB_USER "won"
+ENV DB_PASS "dhvmsthtm1!"
 ENV DB_HOST 127.0.0.1
 ENV DB_NAME "oss_db"
 ENV DB_PORT 3306
