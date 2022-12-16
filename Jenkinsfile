@@ -5,6 +5,7 @@ pipeline {
         CLUSTER_NAME = 'kube'
         LOCATION = 'asia-northeast3-a'
         CREDENTIALS_ID = 'OssCub'  //GithubApp을 통해 추가한 jenkins credential id
+	BUILD_ID='0.1'
     }
     stages {
         stage("Build image") {
