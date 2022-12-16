@@ -4,6 +4,7 @@ pipeline {
         PROJECT_ID = 'oss-project-363004'
         CLUSTER_NAME = 'kube'
         LOCATION = 'asia-northeast3-a'
+        CREDENTIALS_ID = 'OssCub'
     }
     stages {
         stage("Build image") {
