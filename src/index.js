@@ -18,6 +18,9 @@ const server = () => {
     app.use(express.urlencoded({ extended: true }));
     app.use(cors());
     app.use(compression());
+    app.get('/', function (req, res) {
+        res.send('Bye Bye Bye\n');
+    });
 
     app.use('/api', Router());
     app.use(
